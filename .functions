@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+function crtGo
+{
+mkdir $1
+cd $1
+}
+
+function crtOpen
+{
+touch $1
+vim $1
+}
+
+function grepi
+{
+grep -i -r --color=always $1
+}
