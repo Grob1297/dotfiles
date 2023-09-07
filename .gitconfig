@@ -1,0 +1,6 @@
+git config --global user.name "Simon Robinson"        
+git config --global user.email "1475050@cstjean.qc.ca"
+git config --global core.editor "nvim"
+git config user.name "Simon Robinson"        
+git config user.email "1475050@cstjean.qc.ca"
+git config core.editor "nvim" 
