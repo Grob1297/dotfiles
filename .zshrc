@@ -4,7 +4,19 @@ if [ "$USER" = "user" ]; then
 	PS1='%m:%~%# '
 fi
 
-source ~/prog/dotfiles/.aliases
-source ~/prog/dotfiles/.functions
+source .aliases
+source .functions
 
-export PATH="$PATH:/home/prog/dotfiles/bin"
+export PATH="$PATH:$HOME/bin"
+
+user = 'user'
+current_user = $(whoami)
+
+if [$user == $current_user]; then
+	export PS1 =
+else
+	export PS1 =
+
+if [ "$USER" = "user" ]; then
+	PS1='%m:%~%# '
+fi

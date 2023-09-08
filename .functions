@@ -1,15 +1,14 @@
 #!/bin/zsh
 
-function crtGo
+function mkGo
 {
 mkdir $1
 cd $1
 }
 
-function crtOpen
+function mkOpen
 {
-touch $1
-vim $1
+nvim $1
 }
 
 function grepi
